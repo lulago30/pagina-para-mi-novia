@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Especial para Mi Novia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Para Ti, Con Amor</h1>
+        <p>Bienvenida a tu espacio especial, hecho con mucho amor.</p>
+    </header>
+
+    <section id="cartas">
+        <h2>Ábrelas Cuando...</h2>
+        <div class="cartas-container">
+            <button class="carta" onclick="mostrarCarta('aburrida')">Estés Aburrida</button>
+            <button class="carta" onclick="mostrarCarta('triste')">Estés Triste</button>
+            <button class="carta" onclick="mostrarCarta('enojadaConmigo')">Estés Enojada Conmigo</button>
+            <button class="carta" onclick="mostrarCarta('molestaConFamilia')">Estés Molesta con tu Familia</button>
+            <button class="carta" onclick="mostrarCarta('motivarte')">Necesites Motivación</button>
+            <button class="carta" onclick="mostrarCarta('feliz')">Quieras Ser Feliz</button>
+            <button class="carta" onclick="mostrarCarta('recuerdasAmor')">Recuerdes Cuánto Te Amo</button>
+            <button class="carta" onclick="mostrarCarta('abrazo')">Necesites Un Abrazo</button>
+        </div>
+    </section>
+
+    <!-- Modal para mostrar cartas -->
+    <div id="modalCarta" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarCarta()">&times;</span>
+            <div id="contenidoCarta"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
